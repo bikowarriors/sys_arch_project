@@ -8,7 +8,11 @@ body {
     background-color: #8C7964;
     padding: 10px 20px;
   }
+  .cart a{
+    width: 40px;
+  }
   .cart{
+    padding-top: 28px;
     margin-right:48px;
   }
   .user-dropdown{
@@ -32,7 +36,11 @@ body {
     position: relative;
     display: inline-block;
   }
-  
+  .user-button img{
+    width: 40px;
+    margin-right: 44px;
+  }
+
   .user-button {
     border: none;
     background-color: transparent;
@@ -46,7 +54,8 @@ body {
   
   .user-dropdown-menu {
     position: absolute;
-    top: 100%;
+    top: 40%;
+    border-radius: 12px;
     left: 0;
     background-color: #fff;
     list-style: none;
@@ -54,8 +63,23 @@ body {
     display: none;
   }
   
+  .user-dropdown-menu button{
+    background-color: #4D4337;
+    border-radius: 6px;
+    color: white;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: regular;
+  }
+
+  .user-dropdown-menu button:hover{
+    background-color: #A69787;
+  }
+
   .user-dropdown-menu li {
-    padding: 10px;
+    padding: 12px;
+    
   }
   
   .user-dropdown:hover .user-dropdown-menu {
@@ -102,11 +126,12 @@ body {
   
   .category-button.active {
     background-color: #A69787;  /* Add styling for active category button */
-    padding: 12px;
+    padding: 8px;
     border-radius: 8px;
   }
   
   .category-button:hover {
+    margin-top:8px;
     padding: 8px;
     border-radius: 8px;
     background-color: #A69787;
@@ -202,4 +227,70 @@ body {
     font-weight: 600;
     font-style: bold;
     letter-spacing: -2px;
+  }
+
+  #cake-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-group {
+    display: flex;
+    padding:12px;
+    align-items: center;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+  }
+  
+  label {
+    flex-basis: 220px;
+  }
+  
+  select, textarea {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  #message{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    border-radius: 8px;
+  }
+  .centered-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+    #asd{
+    height: 30%;
+    width: 30%;
+    display: block;
+    margin-bottom: 10px;
   }

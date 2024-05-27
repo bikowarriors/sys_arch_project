@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delicious Cake & Bakery</title>
   <link rel="stylesheet" href="dashboard.css">
-  <link rel="stylesheet" href="http://css.gg/css">
 </head>
 <body>
   <header class="header">
@@ -13,15 +12,15 @@
     <img src="assets/oglogo_alter5.png" href="dashboard.html" class="logo">
     <div class="a-box">
             <a href="#" class="cart">
-                <i class="gg-shopping-cart"></i>
+                <img src="assets/grocery-store.png"  alt="Cart">
             </a>
             <div class="user-dropdown">
             <button class="user-button">
-                <img src="images/user-icon.svg" alt="User">
+                <img src="assets/account.png" alt="User">
             </button>
             <ul class="user-dropdown-menu">
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Logout</a></li>
+                <li><button onclick="location.href='#'">Settings</button></li>
+                <li><button onclick="location.href='#'">Logout</button></li>
             </ul>
             </div>
     </div>
@@ -33,7 +32,7 @@
       <button class="category-button" data-product-container="cakes">Cakes</button>
       <button class="category-button" data-product-container="pastries">Pastries</button>
       <button class="category-button" data-product-container="bread">Bread</button>
-      <button onclick="location.href='custom_cake.html'" class="special-cakes-button">Customized Cake</a>
+      <button class="special-cakes-button" data-product-container="specialcakes">Customized Cake</a>
     </aside>
 
     <section class="content-area">
@@ -164,6 +163,51 @@
             <button class="add-to-cart-btn">Add to Cart</button>
             </div>
         </div>
+      </div>
+      <div class="product-container specialcakes" data-product-container="specialcakes"><h2>Customized Cakes</h2>
+        <form id="cake-form">
+
+          <div class="centered-image">
+            <img id="asd" src="assets/c_cake1.jpg" alt="Image">
+            <img id="asd" src="assets/c_cake2.jpg" alt="Image">
+            <img id="asd" src="assets/c_cake4.jpg" alt="Image">
+          </div>
+
+          <div class="form-group">
+            <label for="flavor">Flavor:</label>
+            <select name="flavor" id="flavor">
+              <option value="choco-moist">Chocolate Moist</option>
+              <option value="red-velvet">Red Velvet</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="num-candles">Number of Candles:</label>
+            <select name="num-candles" id="num-candles">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <label for="message">Custom Message:</label>
+            <textarea name="message" id="message" rows="4" placeholder="Enter your message (optional)"></textarea>
+          </div>
+      
+          <div class="form-group">
+            <p><b>Price:</b> PHP 1,500.00</p>
+          </div>
+      
+          <button type="submit">Order Now</button>
+        </form>
       </div>
     </section>
   </main>
