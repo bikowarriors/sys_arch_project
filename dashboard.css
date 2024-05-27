@@ -5,7 +5,7 @@ body {
   }
   
   .header {
-    background-color: #f0f0f0;
+    background-color: #8C7964;
     padding: 10px 20px;
   }
   .cart{
@@ -13,6 +13,10 @@ body {
   }
   .user-dropdown{
     margin-right:32px;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: bold;
   }
   .top-nav {
     display: flex;
@@ -21,8 +25,7 @@ body {
   }
   
   .logo {
-    font-size: 20px;
-    font-weight: bold;
+    width: 280px;
   }
   
   .user-dropdown {
@@ -34,6 +37,11 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    color: white;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: bold;
   }
   
   .user-dropdown-menu {
@@ -68,8 +76,14 @@ body {
   
   .sidenav {
     width: 200px;
-    background-color: #e0e0e0;
+    background-color: #4D4337;
+    color: white;
     padding: 20px;
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    letter-spacing: -2px;
   }
   
   .category-button {
@@ -79,14 +93,23 @@ body {
     background-color: transparent;
     text-align: left;
     cursor: pointer;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    color:white;
   }
   
   .category-button.active {
-    background-color: #ddd;  /* Add styling for active category button */
+    background-color: #A69787;  /* Add styling for active category button */
+    padding: 12px;
+    border-radius: 8px;
   }
   
   .category-button:hover {
-    background-color: #ddd;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #A69787;
   }
   
   .special-cakes-button {
@@ -98,10 +121,17 @@ body {
     text-align: left;
     cursor: pointer;
     margin-top: 12px;
+    font-size: 22px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: bold;
+    color:white;
   }
   
   .special-cakes-button:hover {
-    background-color: #ddd;
+    background-color: #A69787;
+    padding: 8px;
+    border-radius: 8px;
   }
   
   .content-area {
@@ -111,16 +141,20 @@ body {
   }
 
   .add-to-cart-btn {
-    background-color: #f0f0f0;
+    background-color: #4D4337;
     border: none;
-    color: #333;
-    padding: 8px 16px;
+    color: white;
+    padding: 12px 16px;
     cursor: pointer;
     margin-top: 20px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    border-radius: 8px;
   }
   
   .add-to-cart-btn:hover {
-    background-color: #ddd;
+    background-color: #A69787;
   }
   
   .product-container {
@@ -141,7 +175,7 @@ body {
   
   .product-item {
     margin: 12px;
-    padding: 12px;
+    padding: 8px;
     height: 428px;
     width: 338px;
     border: 1px solid #ddd;
@@ -158,11 +192,11 @@ body {
     margin-top: 15px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    padding-top: 16px;
+    padding-top: 0px;
     font-size: 16px;
     font-style: normal;
   }
-  .product-container h3{
+  h2,h3{
     font-size: 24px;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;

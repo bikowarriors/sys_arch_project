@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Delicious Cake & Bakery</title>
   <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="http://css.gg/css">
 </head>
 <body>
   <header class="header">
     <nav class="top-nav">
-    <a href="#" class="logo">Delicious Cake & Bakery</a>
+    <img src="assets/oglogo_alter5.png" href="dashboard.html" class="logo">
     <div class="a-box">
             <a href="#" class="cart">
-                <img src="images/cart-icon.svg" alt="Cart Icon">
+                <i class="gg-shopping-cart"></i>
             </a>
             <div class="user-dropdown">
             <button class="user-button">
-                <img src="images/user-icon.svg" alt="User Icon">
+                <img src="images/user-icon.svg" alt="User">
             </button>
             <ul class="user-dropdown-menu">
                 <li><a href="#">Settings</a></li>
@@ -29,10 +30,10 @@
 
   <main class="main">
     <aside class="sidenav">
-      <button class="category-button active" data-product-container="cakes">Cakes</button>
-      <button class="category-button active" data-product-container="pastries">Pastries</button>
-      <button class="category-button active" data-product-container="bread">Bread</button>
-      <a href="#" class="special-cakes-button">Customized Cake</a>
+      <button class="category-button" data-product-container="cakes">Cakes</button>
+      <button class="category-button" data-product-container="pastries">Pastries</button>
+      <button class="category-button" data-product-container="bread">Bread</button>
+      <button onclick="location.href='custom_cake.html'" class="special-cakes-button">Customized Cake</a>
     </aside>
 
     <section class="content-area">
@@ -141,7 +142,7 @@
           <div class="product-item">
             <img src="assets/Challah.jpg" id="p-img" alt="Bread Image">
             <h3>Challah</h3>
-            <p id="desc">Sliced to reveal its fluffy interior and signature twist..</p>
+            <p id="desc">Sliced to reveal its fluffy interior and signature twist.</p>
             <button class="add-to-cart-btn">Add to Cart</button>
             </div>
           <div class="product-item">
