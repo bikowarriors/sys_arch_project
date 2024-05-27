@@ -1,0 +1,57 @@
+
+
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .cart-item {
+    /* Style for individual cart items */
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .checkout-summary {
+    padding:18px;
+    margin:8px;
+    align-items: center;
+  }
+  
+  #checkout-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  label {
+    flex-basis: 120px;
+  }
+  
+  .form-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Styles for the main content area */
+  .main {
+    flex-wrap: wrap;
+    display: flex;
+    margin: 20px auto;
+    padding: 15px;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    border-radius: 5px
+  }
+  .submit-btn{
+    justify-content: center; 
+  }
